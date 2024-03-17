@@ -64,7 +64,7 @@ The data structure under the folder is as follows:
 
 
 #### step 4: 
-You also need create the annotation `artEmisX_test_annot_exp.json` in the correct format and use[cococaption](https://github.com/tylin/coco-caption) in order to perform evaluation.
+You also need create the annotation `artEmisX_test_annot_exp.json` in the correct format and use [cococaption](https://github.com/tylin/coco-caption) in order to perform evaluation.
 
 
 ### Code
