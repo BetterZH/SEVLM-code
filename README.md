@@ -18,7 +18,7 @@ We conduct experiments on two benchmark datasets: [ArtEmis v1.0 ](https://arxiv.
 #### step 1: 
 - download the [dataset](https://github.com/optas/artemis?tab=readme-ov-file) associated with ArtEmis v1.0.
 #### step 2: 
-- Follow the [ArtEmis](https://github.com/optas/artemis?tab=readme-ov-file) and store the processing results into two folders, named `preprocess_data_mini` and `preprocess_data_nets`. The `image-emotion-histogram.csv` in the former will be used in step 3. The latter mainly contains four files:  `artemis_preprocessed.csv` requires further processing in step 3, and `artemis_gt_references_grouped.pkl`, `vocabulary.pkl` and `best_model.pt` are used for evaluation.
+- Follow the [ArtEmis](https://github.com/optas/artemis?tab=readme-ov-file) and store the processing results into two folders, named `preprocess_data_mini` and `preprocess_data_nets`. The `image-emotion-histogram.csv` in the former will be used in step 3. The latter mainly contains four files:  `artemis_preprocessed.csv` requires further processing in step 3, and `artemis_gt_references_grouped.pkl`, `vocabulary.pkl` and `best_model.pt` are used to evaluate **EA** and **Unique**.
 #### step 3: 
 - Merge file `preprocess_data_mini\image-emotion-histogram.csv` into file `preprocess_data_nets\artemis_preprocessed.csv` and rename column `emotion_histogram` to `origin_emotion_distribution`.
 - Remove the datas with `repetition` greater than 40 in `preprocess_data_nets\artemis_preprocessed.csv`.
@@ -64,7 +64,7 @@ The data structure under the folder is as follows:
 
 
 #### step 4: 
-You also need create the annotation `artEmisX_test_annot_exp.json` in the correct format and use [cococaption](https://github.com/tylin/coco-caption) in order to perform evaluation.
+You also need create the annotation `artEmisX_test_annot_exp.json` in the correct format and use [cococaption](https://github.com/tylin/coco-caption) in order to evaluate **BLUE**, **METEOR**, and **ROUGE**.
 
 
 ### Code
