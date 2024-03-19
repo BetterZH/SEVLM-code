@@ -1,5 +1,5 @@
 # Training A Small Emotional Vision Language Model for Visual Art Comprehension
-Official Code for SEVLM:  [arXiv](https://arxiv.org/pdf/2403.11150.pdf) 
+Official Code for SEVLM:  [arXiv](https://arxiv.org/abs/2403.11150) 
 <br>
 
 
