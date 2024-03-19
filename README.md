@@ -1,6 +1,5 @@
 # Training A Small Emotional Vision Language Model for Visual Art Comprehension
-Official Code for SEVLM:  <br>
-[arXiv](https://arxiv.org/xxxx) 
+Official Code for SEVLM:  [arXiv](https://arxiv.org/pdf/2403.11150.pdf) 
 <br>
 
 
@@ -26,7 +25,14 @@ accelerate launch artEmisX_train.py --ckpt_path /xxxx/ckpts/  --caption_save_pat
 ### Citation
 If you find this work useful in your research, please consider citing:
 ```
-
+@misc{zhang2024training,
+      title={Training A Small Emotional Vision Language Model for Visual Art Comprehension}, 
+      author={Jing Zhang and Liang Zheng and Dan Guo and Meng Wang},
+      year={2024},
+      eprint={2403.11150},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## Acknowledgement
