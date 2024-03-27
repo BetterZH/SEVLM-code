@@ -282,7 +282,7 @@ class Mappting(nn.Module):
         self.model = nn.Sequential(*layers)
 
 
-class LanguageReward(nn.Module):
+class ContrastiveHead(nn.Module):
     def __init__(self, im_dim, hidden_dim, lang_dim):
         super().__init__()
         self.pred = nn.Sequential(nn.Linear(lang_dim * 2 + im_dim, hidden_dim),
@@ -526,7 +526,7 @@ class GPT2LMHeadModel(GPT2PreTrainedModel):
         
 
         if self.use_cl_loss and self.use_cl_loss is not None:
-            self.sim_mlp = LanguageReward(self.encoder_dim, self.transformer.gpt_embedding_size, self.transformer.gpt_embedding_size)
+            self.sim_mlp = ContrastiveHead(self.encoder_dim, self.transformer.gpt_embedding_size, self.transformer.gpt_embedding_size)
 
         if self.use_VAD_loss and self.use_VAD_loss is not None:
             self.VAD_head = nn.Linear(config.n_embd, 3)
