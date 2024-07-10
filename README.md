@@ -13,7 +13,7 @@ This is the repo for the official implementation of the SEVLM.
 <br> 
 <div>
     <a href="https://arxiv.org/abs/2403.11150"><img src="https://img.shields.io/badge/Arxiv-2403.11150-red"/></a>
-    <a href="https://huggingface.co/jing5566/SEVLM"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-green"></a>
+    <a href="https://huggingface.co/jing5566/SEVLM/tree/main"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-green"></a>
 </div>
 
 
