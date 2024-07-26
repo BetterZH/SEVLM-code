@@ -168,11 +168,11 @@ class artEmisXTrainDataset(Dataset):
         input_ids=torch.stack([input_ids_1, input_ids_2])
         labels = torch.stack([labels_1,labels_2])
         segment_ids = torch.stack([segment_ids_1,segment_ids_2])
-        emotion_distribution = torch.stack([emotion_distribution,emotion_distribution])
-        origin_emotion_distribution = torch.stack([origin_emotion_distribution,origin_emotion_distribution])
+        # emotion_distribution = torch.stack([emotion_distribution,emotion_distribution])
+        # origin_emotion_distribution = torch.stack([origin_emotion_distribution,origin_emotion_distribution])
         VAD_features = torch.stack([VAD_features1, VAD_features2])
 
-        return (img, did, input_ids, labels, segment_ids,emotion_distribution,origin_emotion_distribution,VAD_features)
+        return (img, did, input_ids, labels, segment_ids,VAD_features)
 
     def __len__(self):
         return len(self.ids_list)
